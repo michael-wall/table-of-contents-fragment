@@ -4,7 +4,7 @@
 <h1 class="component-heading">shoulder landjaeger hamburger t-bone ham short</h1>
 ```
 - The fragment only renders the TOC in Read mode (or 'Preview In a New Tab') so it doesn't inadvertently modify the page HTML in page Edit mode.
-- The fragment adds a unique id attribute to each matching <h1> elements if not already present. For example
+- The fragment adds a unique id attribute to each matching h1 elements if not already present. For example
 ```
 <h1 class="component-heading">shoulder landjaeger hamburger t-bone ham short</h1>
 ```
@@ -26,5 +26,6 @@ becomes
 ```
 
 ## Notes ##
-# This is a ‘proof of concept’ that is being provided ‘as is’ without any support coverage or warranty.
-# It has been tested using 2024.Q1 with Chrome browser.
+- This is a ‘proof of concept’ that is being provided ‘as is’ without any support coverage or warranty.
+- It has been tested using 2024.Q1 with Chrome browser.
+- See fragment_recording.7z for a short recording.
