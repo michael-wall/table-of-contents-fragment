@@ -1,0 +1,7 @@
+[#if layoutMode == "edit"]
+  <div class="toc-placeholder"></div>
+[#else]
+  <div class="h1-toc">
+    <ul id="h1-list"></ul>
+  </div>
+[/#if]
