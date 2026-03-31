@@ -1,0 +1,63 @@
+(function () {
+  // Only run in view mode (not in edit mode)
+  if (document.body.classList.contains('has-edit-mode-menu')) {
+		return;
+  }
+
+  const listContainerId = 'h1-list';
+
+  function generateH1List() {
+    const listContainer = document.getElementById(listContainerId);
+    if (!listContainer) return;
+
+    const h1Elements = document.querySelectorAll('h1.component-heading');
+
+    // Prevent unnecessary re-render if nothing changed
+    const currentIds = Array.from(listContainer.querySelectorAll('a')).map(a => a.getAttribute('href'));
+    const newIds = Array.from(h1Elements).map((h1, index) => {
+      if (!h1.id) {
+        h1.id = 'h1-anchor-' + index;
+      }
+      return '#' + h1.id;
+    });
+
+    if (JSON.stringify(currentIds) === JSON.stringify(newIds)) {
+      return;
+    }
+
+    // Rebuild list
+    listContainer.innerHTML = '';
+
+    h1Elements.forEach((h1) => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+
+      a.href = '#' + h1.id;
+      a.textContent = h1.textContent;
+
+      li.appendChild(a);
+      listContainer.appendChild(li);
+    });
+  }
+
+  function initObserver() {
+    const observer = new MutationObserver(() => {
+      generateH1List();
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
+    // Initial run
+    generateH1List();
+  }
+
+  // Ensure DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initObserver);
+  } else {
+    initObserver();
+  }
+})();
