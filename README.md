@@ -27,6 +27,7 @@ becomes
 
 ## Notes ##
 - This is a ‘proof of concept’ that is being provided ‘as is’ without any support coverage or warranty.
-- It has been tested using 2024.Q1 with Chrome browser.
-- It has been tested with Senna.js Single Page Application enabled.
+- The fragment has been tested using 2024.Q1 with recent Google Chrome and Microsoft Edge browsers.
+- The fragment has been tested with Senna.js Single Page Application enabled.
+- The fragment can be embedded in a Master Page Template. Nothing is displayed if the page doesn't have any matching h1 tags.
 - See fragment_recording.7z for a short recording.
