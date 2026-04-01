@@ -24,7 +24,3 @@
 .h1-toc a:hover {
   text-decoration: underline;
 }
-
-h1.component-heading {
-  scroll-margin-top: 75px;
-}
