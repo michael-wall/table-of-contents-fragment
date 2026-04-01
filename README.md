@@ -30,4 +30,7 @@ becomes
 - The fragment has been tested using 2024.Q1 with recent Google Chrome and Microsoft Edge browsers.
 - The fragment has been tested with Senna.js Single Page Application enabled.
 - The fragment can be embedded in a Master Page Template. Nothing is displayed if the page doesn't have any matching h1 tags.
-- See fragment_recording.7z for a short recording.
+- See recording\toc_recording.mp4 for a short recording.
+
+## Screenshot ##
+![Screenshot](screenshot/toc_screenshot.jpg)
