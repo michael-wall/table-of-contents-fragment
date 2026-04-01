@@ -12,8 +12,8 @@ becomes
 ```
 <h1 class="component-heading" id="h1-anchor-3">shoulder landjaeger hamburger t-bone ham short</h1>
 ```
-- Consider updating this id to match the h1 label.
-- The Table of Content outout has a fixed position based on this CSS which should be tweaked as needed:
+- Consider updating this id syntax to match the h1 label.
+- The Table of Content output has a fixed position based on this CSS which should be tweaked as needed:
 ```
 .h1-toc {
   padding: 1rem;
@@ -28,4 +28,5 @@ becomes
 ## Notes ##
 - This is a ‘proof of concept’ that is being provided ‘as is’ without any support coverage or warranty.
 - It has been tested using 2024.Q1 with Chrome browser.
+- It has been tested with Senna.js Single Page Application enabled.
 - See fragment_recording.7z for a short recording.
